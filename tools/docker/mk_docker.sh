@@ -1,7 +1,7 @@
 #!/bin/sh
 #for making docker
 # Docker name
-NAME="seon-pwn"
+NAME="${1}-pwn"
 sudo docker kill $NAME
 sudo docker rm $NAME
 sudo docker build --tag $NAME:1.0 ./
